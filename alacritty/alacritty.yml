@@ -1,0 +1,79 @@
+font:
+  size: 17
+  offset:
+    y: 16
+  glyph_offset:
+    y: 9
+  normal:
+    family: "Hack Nerd Font Mono"
+window:
+  padding:
+    x: 5
+    y: 5
+  dimensions:
+    columns: 90
+    lines: 30
+  opacity: 0.98
+  decorations: buttonless
+
+cursor:
+  unfocused_hollow: true
+  style:
+    blinking: Never
+
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux"
+  key_bindings:
+    - { key: V, mods: Control|Shift, action: Paste }
+    - { key: C, mods: Control|Shift, action: Copy }
+    - { key: Key0, mods: Control, action: ResetFontSize }
+    - { key: Equals, mods: Control, action: IncreaseFontSize }
+    - { key: Add, mods: Control, action: IncreaseFontSize }
+    - { key: Subtract, mods: Control, action: DecreaseFontSize }
+    - { key: Minus, mods: Control, action: DecreaseFontSize }
+    - { key: N, mods: Control, action: SpawnNewInstance }
+
+env:
+  TERM: xterm-256color
+
+scrolling:
+  history: 2000
+  auto_scroll: true
+theme: Base16-Default-Dark
+
+colors:
+  # Default colors
+  primary:
+    background: '#181818'
+    foreground: '#d8d8d8'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '#d8d8d8'
+    cursor: '#d8d8d8'
+
+  # Normal colors
+  normal:
+    black: '#181818'
+    red: '#ab4642'
+    green: '#a1b56c'
+    yellow: '#f7ca88'
+    blue: '#7cafc2'
+    magenta: '#ba8baf'
+    cyan: '#86c1b9'
+    white: '#d8d8d8'
+
+  # Bright colors
+  bright:
+    black: '#585858'
+    red: '#ab4642'
+    green: '#a1b56c'
+    yellow: '#f7ca88'
+    blue: '#7cafc2'
+    magenta: '#ba8baf'
+    cyan: '#86c1b9'
+    white: '#f8f8f8'
