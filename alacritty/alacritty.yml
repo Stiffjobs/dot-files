@@ -43,37 +43,32 @@ env:
 scrolling:
   history: 2000
   auto_scroll: true
-theme: Base16-Default-Dark
+theme: Atelierseaside.dark
 
 colors:
-  # Default colors
+  name: Atelierseaside (dark)
+  author: Chris Kempson
   primary:
-    background: '#181818'
-    foreground: '#d8d8d8'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
+    background: "#131513"
+    foreground: "#8ca68c"
   cursor:
-    text: '#d8d8d8'
-    cursor: '#d8d8d8'
-
-  # Normal colors
+    text: "#131513"
+    cursor: "#8ca68c"
   normal:
-    black: '#181818'
-    red: '#ab4642'
-    green: '#a1b56c'
-    yellow: '#f7ca88'
-    blue: '#7cafc2'
-    magenta: '#ba8baf'
-    cyan: '#86c1b9'
-    white: '#d8d8d8'
-
-  # Bright colors
+    black: "#131513"
+    red: "#e6193c"
+    green: "#29a329"
+    yellow: "#c3c322"
+    blue: "#3d62f5"
+    magenta: "#ad2bee"
+    cyan: "#1999b3"
+    white: "#8ca68c"
   bright:
-    black: '#585858'
-    red: '#ab4642'
-    green: '#a1b56c'
-    yellow: '#f7ca88'
-    blue: '#7cafc2'
-    magenta: '#ba8baf'
-    cyan: '#86c1b9'
-    white: '#f8f8f8'
+    black: "#687d68"
+    red: "#e6193c"
+    green: "#29a329"
+    yellow: "#c3c322"
+    blue: "#3d62f5"
+    magenta: "#ad2bee"
+    cyan: "#1999b3"
+    white: "#f0fff0"
