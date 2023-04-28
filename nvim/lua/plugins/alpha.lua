@@ -11,6 +11,8 @@ return {
 ███████║   ██║   ██║██║     ██║   ╚█████╔╝╚██████╔╝██████╔╝███████║
 ╚══════╝   ╚═╝   ╚═╝╚═╝     ╚═╝    ╚════╝  ╚═════╝ ╚═════╝ ╚══════╝
       ]]
+      -- https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Stiffjobs
+      -- ANSI Shadow
 
       dashboard.section.header.val = vim.split(logo, "\n")
 
