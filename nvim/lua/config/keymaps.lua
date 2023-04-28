@@ -12,7 +12,7 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
-
+vim.api.nvim_set_keymap("n", "<leader>fm", "<cmd>Telescope lsp_document_symbols<CR>", { noremap = true, silent = true })
 map("i", "jj", "<Esc>")
 map("n", "<C-.>", vim.lsp.buf.code_action)
 map("n", "<C-h>", [[<cmd>lua require('tmux').move_left()<cr>]])
