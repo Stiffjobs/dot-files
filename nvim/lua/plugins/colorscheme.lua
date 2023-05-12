@@ -23,11 +23,12 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
+      colorscheme = "rose-pine",
       -- colorscheme = "vscode",
       -- colorscheme = "rose-pine-moon",
       -- colorscheme = "catppuccin-macchiato",
       -- colorscheme = "tokyonight",
-      colorscheme = "tokyonight",
+      -- colorscheme = "tokyonight",
     },
   },
 }
