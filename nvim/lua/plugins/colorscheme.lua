@@ -1,21 +1,25 @@
+function ColorMyPencils(color)
+  color = color or "rose-pine"
+  vim.cmd.colorscheme(color)
+
+  -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
 return {
   -- add gruvbox
   {
     "ellisonleao/gruvbox.nvim",
     -- config = function()
-    --   vim.o.background = "dark"
-    --   vim.cmd([[colorscheme gruvbox]])
+    --   ColorMyPencils("gruvbox")
     -- end,
   },
   {
     "rose-pine/neovim",
     as = "rose-pine",
-    -- config = function()
-    --   vim.cmd.colorscheme("rose-pine")
-
-    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-    -- end,
+    config = function()
+      ColorMyPencils()
+    end,
   },
   {
     "Mofiqul/vscode.nvim",
@@ -26,6 +30,9 @@ return {
   },
   {
     "EdenEast/nightfox.nvim",
+    -- config = function()
+    --   ColorMyPencils("nightfox")
+    -- end,
   },
   {
     "folke/tokyonight.nvim",
@@ -37,17 +44,4 @@ return {
       },
     },
   },
-
-  -- Configure LazyVim to load gruvbox
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "nightfox",
-  -- colorscheme = "gruvbox",
-  -- colorscheme = "vscode",
-  -- colorscheme = "rose-pine-moon",
-  -- colorscheme = "catppuccin-macchiato",
-  -- colorscheme = "tokyonight",
-  --   },
-  -- },
 }
