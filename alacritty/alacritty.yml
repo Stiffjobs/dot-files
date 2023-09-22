@@ -1,0 +1,50 @@
+font:
+  size: 17
+  offset:
+    y: 16
+  glyph_offset:
+    y: 9
+  bold:
+    family: "MesloLGS NF"
+    style: Regular
+  normal:
+    family: "MesloLGS NF"
+    style: Regular
+window:
+  padding:
+    x: 5
+    y: 5
+  dimensions:
+    columns: 90
+    lines: 30
+  opacity: 0.9
+  decorations: buttonless
+
+cursor:
+  unfocused_hollow: true
+  style:
+    blinking: Never
+
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux"
+  key_bindings:
+    - { key: V, mods: Control|Shift, action: Paste }
+    - { key: C, mods: Control|Shift, action: Copy }
+    - { key: Key0, mods: Control, action: ResetFontSize }
+    - { key: Equals, mods: Control, action: IncreaseFontSize }
+    - { key: Add, mods: Control, action: IncreaseFontSize }
+    - { key: Subtract, mods: Control, action: DecreaseFontSize }
+    - { key: Minus, mods: Control, action: DecreaseFontSize }
+    - { key: N, mods: Control, action: SpawnNewInstance }
+
+env:
+  TERM: xterm-256color
+
+scrolling:
+  history: 2000
+  auto_scroll: true
+theme: github_dark
