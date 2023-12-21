@@ -1,15 +1,20 @@
 font:
-  size: 17
+  size: 18
   offset:
     y: 16
   glyph_offset:
     y: 9
   bold:
-    family: "MesloLGS NF"
+    # family: "MesloLGS NF"
+    family: "Hack Nerd Font"
     style: Regular
   normal:
-    family: "MesloLGS NF"
+    # family: "MesloLGS NF"
+    family: "Hack Nerd Font"
     style: Regular
+  italic:
+    family: Hack Nerd Font
+    style: Italic
 window:
   padding:
     x: 5
@@ -17,7 +22,7 @@ window:
   dimensions:
     columns: 90
     lines: 30
-  opacity: 0.9
+  opacity: 0.8
   decorations: buttonless
 
 cursor:
@@ -47,4 +52,31 @@ env:
 scrolling:
   history: 2000
   auto_scroll: true
-theme: github_dark
+theme: Kitty
+colors:
+  # Default colors
+  primary:
+    background: "#000000"
+    foreground: "#dddddd"
+
+  # Normal colors
+  normal:
+    black: "#000000"
+    red: "#cc0403"
+    green: "#19cb00"
+    yellow: "#cecb00"
+    blue: "#0d73cc"
+    magenta: "#cb1ed1"
+    cyan: "#0dcdcd"
+    white: "#dddddd"
+
+  # Bright colors
+  bright:
+    black: "#767676"
+    red: "#f2201f"
+    green: "#23fd00"
+    yellow: "#fffd00"
+    blue: "#1a8fff"
+    magenta: "#fd28ff"
+    cyan: "#14ffff"
+    white: "#ffffff"

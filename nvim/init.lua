@@ -1,7 +1,10 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+-- vim.cmd.colorscheme("rose-pine")
 ColorMyPencils("rose-pine")
--- ColorMyPencils("vscode")
+-- ColorMyPencils("solarized-osaka")
+-- vim.cmd.colorscheme("solarized-osaka")
+-- ColorMyPencils("catppuccin-frappe")
 -- vim.cmd.colorscheme("gruvbox")
 -- vim.cmd.colorscheme("rose-pine")
 -- vim.cmd.colorscheme("catppuccin")

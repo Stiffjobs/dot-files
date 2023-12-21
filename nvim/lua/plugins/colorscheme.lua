@@ -1,9 +1,6 @@
 function ColorMyPencils(color)
   color = color or "rose-pine"
   vim.cmd.colorscheme(color)
-
-  -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-  -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 return {
@@ -26,6 +23,20 @@ return {
     name = "catppuccin",
   },
   {
+    {
+      "craftzdog/solarized-osaka.nvim",
+      lazy = false,
+      priority = 1000,
+      opts = {
+        transparent = false,
+        -- styles = {
+        --   sidebars = "transparent",
+        --   floats = "normal",
+        -- },
+      },
+    },
+  },
+  {
     "EdenEast/nightfox.nvim",
     -- config = function()
     --   ColorMyPencils("nightfox")
@@ -40,8 +51,5 @@ return {
       --   floats = "transparent",
       -- },
     },
-  },
-  {
-    "Mofiqul/vscode.nvim",
   },
 }
