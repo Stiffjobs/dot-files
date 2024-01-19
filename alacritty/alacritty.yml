@@ -22,7 +22,7 @@ window:
   dimensions:
     columns: 90
     lines: 30
-  opacity: 0.8
+  opacity: 0.9
   decorations: buttonless
 
 cursor:
@@ -52,31 +52,26 @@ env:
 scrolling:
   history: 2000
   auto_scroll: true
-theme: Kitty
+theme: Substrata
 colors:
-  # Default colors
   primary:
-    background: "#000000"
-    foreground: "#dddddd"
-
-  # Normal colors
+    background: '#191c25'
+    foreground: '#b5b4c9'
   normal:
-    black: "#000000"
-    red: "#cc0403"
-    green: "#19cb00"
-    yellow: "#cecb00"
-    blue: "#0d73cc"
-    magenta: "#cb1ed1"
-    cyan: "#0dcdcd"
-    white: "#dddddd"
-
-  # Bright colors
+    black: '#2e313d'
+    red: '#cf8164'
+    green: '#76a065'
+    yellow: '#ab924c'
+    blue: '#8296b0'
+    magenta: '#a18daf'
+    cyan: '#659ea2'
+    white: '#b5b4c9'
   bright:
-    black: "#767676"
-    red: "#f2201f"
-    green: "#23fd00"
-    yellow: "#fffd00"
-    blue: "#1a8fff"
-    magenta: "#fd28ff"
-    cyan: "#14ffff"
-    white: "#ffffff"
+    black: '#5b5f71'
+    red: '#fe9f7c'
+    green: '#92c47e'
+    yellow: '#d2b45f'
+    blue: '#a0b9d8'
+    magenta: '#c6aed7'
+    cyan: '#7dc2c7'
+    white: '#f0ecfe'
